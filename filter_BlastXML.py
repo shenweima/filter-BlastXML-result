@@ -19,7 +19,7 @@ def filter_blastXML(a):
             for i in b:
                 if '<Hit_num>' in i:
                     n = int(i.split('>')[1].split('<')[0])
-                    if n > 3 :   # retain top 3 hits
+                    if n > 3 :   # retain top three best hits
                         c.append((start, end))
     return c  
 
